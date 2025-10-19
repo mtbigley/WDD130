@@ -1,4 +1,9 @@
-/* 🎨 Root Variables — something I learned while doing some css digging-- global variables oughta make it easier to change colors up globally; something I'm probably gonna try */
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  Root Variables — something I learned while doing some css digging-- global variables oughta make it easier to change colors up globally; something I'm probably gonna try */
 /* Color scheme - I wanted to creat something of a summer-y neopolitan-y nature, might switch it up to something more rustic in the future. */
 :root {
   --primary: #A0CED9;      /* Teal background */
@@ -9,13 +14,36 @@
   --highlight: #ADF7B6;    /* Mint hover */
 }
 
+/* Font families and sizes */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alan Sans', sans-serif;
+  color: var(--text);
+}
+
+.home-title {
+    color: var(--text);
+    font-family: 'Alan Sans', sans-serif;
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 2.5em; 
+}
+
 /* General layout */
 #content {
     max-width: 1600px; 
     margin: 0 auto;
-    }
+}
 
-    
+.home-title {
+    margin-top: 10px;
+}
+
 /* Header and Navigation */
 
 header {
@@ -31,6 +59,8 @@ nav a {
     color: var(--text);
     text-decoration: none;
     background-color: var(--secondary);
+    font-size: 1.25em; 
+    padding: 35px;
     
 }
 
@@ -56,6 +86,9 @@ nav a:hover {
     background-color: var(--accent);
     color: var(--text);
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, 
@@ -72,8 +105,13 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 /* background & message box */
@@ -84,11 +122,17 @@ main section {
 }
 
 body {
-    background-color: var(--primary)
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .msg {
-    background-color: var(--primary)
+    background-color: var(--primary);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -97,6 +141,15 @@ body {
 
 .msg p {
     color: var(--text);
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--secondary)
 }
 
 /* Footer */
@@ -104,6 +157,8 @@ body {
 footer {
   background-color: var(--neutral);
   color: var(--text);
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a {
@@ -123,15 +178,14 @@ footer p a:hover {
     text-decoration: underline;
 }    
 
-/* Headings */
-
-.home-title {
-    color: var(--text)
+footer .social img {
+    padding-top: 15px;
 }
 
-h4 {
-    color: var(--text)
+h2 {
+    margin: 0;
 }
 
-
- 
+#logo_link {
+    padding-top: 5px;
+}
