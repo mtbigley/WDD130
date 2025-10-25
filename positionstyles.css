@@ -148,7 +148,7 @@
   width: 200px;
   height: 200px;
   background-color: green;
-  float: left;             /* green sits on top, text wraps around it */
+  float: left; /* green sits on top, text wraps around it */
 }
 .yellow5 {
   background-color: gold;
@@ -159,7 +159,7 @@
   width: 100%;
   height: 100px;
   background-color: blue;
-  clear: both;  /* makes sure it sits below the floated green box */
+  clear: both; /* makes sure it sits below the floated green box */
 } 
 /* Activity 6 styles */ 
 .content6 {
