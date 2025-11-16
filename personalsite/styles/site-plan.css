@@ -36,6 +36,7 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  background-color: var(--secondary-color);
 }
 img {
   display: block;
@@ -54,6 +55,7 @@ hr {
   background: var(--accent1-color);
 }
 header {
+  margin-bottom: 2rem;
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
@@ -173,4 +175,9 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+img[src*="wireframes"] {
+  width: 300px;
+  height: auto;
 }
