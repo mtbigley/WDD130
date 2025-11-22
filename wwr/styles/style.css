@@ -307,6 +307,95 @@ h2 {
     margin: 15px 0;
 }
 
+/* Contact Page Form */
+
+.contact-form-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+form {
+    display: inline-block;
+    padding: 2em;
+    border: 2px solid var(--secondary);
+    border-radius: 12px;
+    background-color: var(--neutral);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+form p + p {
+    margin-top: 1.2em;
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--text);
+}
+
+input,
+textarea {
+    font: 1em 'Roboto', sans-serif;
+    width: 320px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--text);
+    background-color: white;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--highlight);
+}
+
+textarea {
+    vertical-align: top;
+    height: 6em;
+}
+
+.button {
+    padding-left: 120px;
+}
+
+button {
+    background-color: var(--accent);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight);
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+        
+
 /* Media query section-- this needs to be at the end of the css */
 
 @media screen and (max-width: 900px) {
