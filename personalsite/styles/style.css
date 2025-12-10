@@ -221,8 +221,8 @@ nav a:hover {
 }
 
 .blog-content img {
-    width: 260px;              
-    height: 180px;             
+    width: 500px;              
+    height: 400px;             
     border-radius: 10px;
     border: 3px solid var(--accent2-color);
 }
